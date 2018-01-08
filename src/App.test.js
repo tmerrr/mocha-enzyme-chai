@@ -1,15 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { shallow, mount, render } from 'enzyme';
-import chai, { expect } from 'chai';
-import chaiEnzyme from 'chai-enzyme';
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
+import chai, { expect } from 'chai';
+import chaiEnzyme from 'chai-enzyme';
 
-import { configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-
-configure({ adapter: new Adapter() });
 chai.use(chaiEnzyme());
 
 import App, { Header } from './App';
